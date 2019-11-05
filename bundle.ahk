@@ -28,5 +28,6 @@ return
 return
 
 ; win+shift+q to close focused window
-#+q::Send !{F4}
+#+q::
+    Send !{F4}
 return

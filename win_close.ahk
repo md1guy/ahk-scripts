@@ -1,2 +1,3 @@
-#+q::Send !{F4}
+#+q::
+    Send !{F4}
 return

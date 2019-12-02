@@ -1,6 +1,7 @@
-#NoEnv  
-SendMode Input  
-SetWorkingDir %A_ScriptDir%  
+#NoEnv
+SendMode Input
+SetWorkingDir %A_ScriptDir%
 
 #Enter up::
-    Run, C:\Program Files\Git\git-bash.exe --cd-to-home
+    Run, *RunAs %ProgramFiles%\Git\git-bash.exe -c "/usr/bin/bash --login -i"
+return

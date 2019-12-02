@@ -17,9 +17,14 @@ capslock up::
     sel := 0
 return
 
-; win+enter to start git bash with
+; win+enter to start git bash as admin
 #Enter up::
-    Run, C:\Program Files\Git\git-bash.exe --cd-to-home
+    Run, *RunAs %ProgramFiles%\Git\git-bash.exe -c "/usr/bin/bash --login -i"
+return
+
+; win+shift+enter to start new windows terminal
+#+Enter up::
+    Run, C:\Users\ovolc\AppData\Local\Microsoft\WindowsApps\wt.exe
 return
 
 ; ctrl+space to stick focuced window to top

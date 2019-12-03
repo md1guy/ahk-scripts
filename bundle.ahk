@@ -19,7 +19,7 @@ return
 
 ; win+enter to start git bash as admin
 #Enter up::
-    Run, *RunAs %ProgramFiles%\Git\git-bash.exe -c "/usr/bin/bash --login -i"
+    Run, *RunAs %ProgramFiles%\Git\git-bash.exe --cd-to-home -c "/usr/bin/bash --login -i"
 return
 
 ; win+shift+enter to start new windows terminal

@@ -6,12 +6,24 @@ sel := 0
 
 #if (sel=0)
 capslock::
-    send {lwin down}{Space}
+    Send {lwin down}{Space}
     sel := 1
 return 
 #if
 
 capslock up::
-    send {lwin up}
+    Send {lwin up}
     sel := 0
-return 
+return
+
+!F1::
+    Send !+1
+return
+
+!F2::
+    Send !+2
+return
+
+!F3::
+    Send !+3
+return

@@ -17,6 +17,21 @@ capslock up::
     sel := 0
 return
 
+; set ukrainian keyboard layout
+!F1::
+    Send !+1
+return
+
+; set russian keyboard layout
+!F2::
+    Send !+2
+return
+
+; set english keyboard layout
+!F3::
+    Send !+3
+return
+
 ; win+enter to start git bash as admin
 #Enter up::
     Run, *RunAs %ProgramFiles%\Git\git-bash.exe --cd-to-home -c "/usr/bin/bash --login -i"

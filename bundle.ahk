@@ -1,4 +1,4 @@
-#NoEnv
+﻿#NoEnv
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
@@ -11,7 +11,7 @@ sel := 0
     sel := 1
 return
 #if
-    
+
 capslock up::
     send {lwin up}
     sel := 0
@@ -61,3 +61,13 @@ return
         RegWrite, REG_DWORD, HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
     }
 return
+
+; win+alt+s to shrug
+#!s::
+    SendInput, ¯\_(ツ)_/¯
+Return
+
+; win+alt+s to paste em dash
+#!d::
+    SendInput, —
+Return
